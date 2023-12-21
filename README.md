@@ -1,2 +1,1 @@
-# NDDsImagingStreamlitApp
-Source code for streamlit webapp https://ndds-brainimaging-ml.streamlit.app/
+# Quantitative markers of ADRD using machine learning and imaging
