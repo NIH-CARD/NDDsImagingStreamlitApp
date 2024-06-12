@@ -21,14 +21,13 @@ def app():
     st.write("## Introduction")
     st.write(
         """
-        The Shapley additive explanations (SHAP) approach was used to evaluate each feature’s influence in the ensemble learning. This approach, used in game theory, assigned an importance (Shapley) value to each feature to determine a player’s contribution to success. Shapley explanations enhance understanding by creating accurate explanations for each observation in a dataset. They bolster trust when the critical variables for specific records conform to human domain knowledge and reasonable expectations.
         We used the one-vs-rest technique for multiclass classification. Based on that, we trained a separate binary classification model for each class.
         """
     )
         st.write(
             """
             "In our model, we use an approach called Shapley's Additive Explanations (SHAP) to evaluate how different features affect learning. This method assigns a value of importance to each feature. This is similar to how we assign a value to each player's contribution to the team's success in a game. Shapley's explanations help us better understand how each trait affects the model's predictions for each patient in our data set. This is useful because if the most important variables for a particular patient match what we know in medical practice and our reasonable expectations, we have more confidence in the model's predictions. For multi-class classification, we use the one-versus-the-rest technique, where we train a separate model for each class of AD we want to predict.
-            The X axis in the SHAP graph below corresponds to the SHAP value which can be positive or negative regarding the value of that feature in a patient. A vertical line mark the 0 SHAP value. While the Y axis in the graph correspond to the value of the feature.
+            The X axis in the SHAP graph below corresponds to the SHAP value which can be positive or negative regarding the value of that feature in a patient. A vertical line mark the baseline SHAP value. While the Y axis in the graph correspond to the value of the feature.
             In example: in AD the most relevant feature for prediction was “thk left hippocampushipplr” which corresponds to the thickness of the left hippocampus. The long tail to to the right is mostly filled with blue colors. This means that low values (less hippocampus thickness) are associated with great impact in the models prediction. In the other hand, a short left tail, mostly filled with red colors, means that higher hippocampus thickness is associated with less impact in the model prediction.
 
             Rodríguez-Pérez R, Bajorath J. Interpretation of Compound Activity Predictions from Complex Machine Learning Models Using Local Approximations and Shapley Values. J Med Chem. 2020

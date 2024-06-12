@@ -41,11 +41,14 @@ def app():
     st.write("## Model Perturbation Analysis")
     st.write(
         """
-        This predictive model utilizes parameters derived from T1w Brain MRI. 
+        This predictive model utilizes features derived from T1w Brain MRI.
         The model parameters include measurments of area, thickness and volume of brain lobes, cortical and subcortical brain regions, basal forebrain, white matter, medial temporal lobe parcellation of hipocampal and extra-hippocampal regions, and cerebellum.
         These regions are obtained from the CIT168 template (Subcortical brain nuclei), Desikan Killiany Tourville (DKT - Whole brain segmentation), among others atlas, and are implemented trough the ANTsPyMM library.
 
-         ANTsX neuroimaging-derived structural phenotypes of UK Biobank Nicholas J. Tustison et al. medRxiv 2023
+        ANTsX Tustison, N.J., Yassa, M.A., Rizvi, B. et al. ANTsX neuroimaging-derived structural phenotypes of UK Biobank. Sci Rep 14, 8848 (2024). https://rdcu.be/dKx0V
+        CIT 168-SubCortical Atlas https://github.com/jmtyszka/CIT168-SubCorticalAtlas
+        DKT Atlas Klein A and Tourville J (2012) 101 labeled brain images and a consistent human cortical labeling protocol. Front. Neurosci. 6:171. doi: 10.3389/fnins.2012.00171 . https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2012.00171/full
+ 
         """
     )
 
